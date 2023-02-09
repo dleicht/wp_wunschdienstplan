@@ -22,6 +22,9 @@
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
  */
 
+/* Der Wunschdienstplan zeigt sensitive Daten. Hier verhindern wir das caching im Browser. */
+header("Cache-Control: no-store");
+
 /* Verbiete den direkten Zugriff auf die Plugin-Datei. */
 defined('ABSPATH') or die('Na na na! *fingerzeig* Das ist aber jemand unanständig!');
 
